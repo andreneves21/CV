@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professional CV - Alexandre Silva</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#e6e8ea",
+                      "tertiary-container": "#001f26",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#565e74",
+                      "on-secondary-fixed": "#0b1c30",
+                      "primary-fixed": "#dae2fd",
+                      "on-secondary-container": "#54647a",
+                      "on-tertiary-fixed-variant": "#004e5c",
+                      "on-tertiary-container": "#0090a9",
+                      "primary": "#000000",
+                      "outline": "#76777d",
+                      "surface-variant": "#e0e3e5",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#eff1f3",
+                      "error-container": "#ffdad6",
+                      "surface-container": "#eceef0",
+                      "on-primary-container": "#7c839b",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#bec6e0",
+                      "on-background": "#191c1e",
+                      "surface-dim": "#d8dadc",
+                      "tertiary": "#000000",
+                      "on-primary-fixed": "#131b2e",
+                      "primary-container": "#131b2e",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "secondary-container": "#d0e1fb",
+                      "on-surface": "#191c1e",
+                      "secondary": "#505f76",
+                      "secondary-fixed": "#d3e4fe",
+                      "background": "#f7f9fb",
+                      "inverse-surface": "#2d3133",
+                      "inverse-primary": "#bec6e0",
+                      "surface-container-low": "#f2f4f6",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#e0e3e5",
+                      "tertiary-fixed-dim": "#4cd7f6",
+                      "on-surface-variant": "#45464d",
+                      "surface-bright": "#f7f9fb",
+                      "tertiary-fixed": "#acedff",
+                      "outline-variant": "#c6c6cd",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "on-tertiary-fixed": "#001f26",
+                      "surface": "#f7f9fb"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "page-margin": "2rem",
+                      "section-gap": "2.5rem",
+                      "entry-gap": "1.5rem",
+                      "badge-padding": "0.25rem 0.75rem",
+                      "gutter": "1.5rem"
+              },
+              "fontFamily": {
+                      "job-title": ["Inter"],
+                      "code-label": ["JetBrains Mono"],
+                      "name-heading": ["Inter"],
+                      "metadata": ["Inter"],
+                      "body-main": ["Inter"],
+                      "section-title": ["Inter"]
+              },
+              "fontSize": {
+                      "job-title": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                      "code-label": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                      "name-heading": ["36px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                      "metadata": ["10px", { "lineHeight": "14px", "fontWeight": "500" }],
+                      "body-main": ["11pt", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "section-title": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-main selection:bg-tertiary selection:text-on-tertiary pb-24 md:pb-0">
+<!-- TopAppBar (Hidden on Mobile as per constraints, but requested as shell, will show full nav on desktop) -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-page-margin h-16 bg-surface-container-lowest border-b border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/20">
+<img alt="Profile Picture" class="w-full h-full object-cover" data-alt="A professional headshot of a modern software engineer in a well-lit office setting. He is wearing a crisp dark shirt. The background is slightly blurred with soft cool tones typical of a corporate tech environment. High resolution, sharp focus on face." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoWhyMgskR8k9iDrGexrN6zsWuasVq1xRfE4Ygf0A81EhGYxUtOvpo24WF4XOqndvMsN5uv4I6rrHuAUUCxPYXrKx5rFWHwuTNC0NAv4fT6fkWUG03IIlWUpnEqWcAzZ41kVrMGxMtKkAml8Ol2Ysxp7CP9FfPSBpbtQIhAUYTjrXspaoYfltNBlOADlJtFgEsI9nmEeP7yJWwOYG1DohRPJBL5tpK5gPO2XH80KKyprAmKSxU3rEluw"/>
+</div>
+<span class="text-section-title font-section-title tracking-widest text-primary uppercase">PROFESSIONAL CV</span>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-8">
+<a class="font-name-heading text-section-title text-primary hover:bg-surface-container-high transition-colors px-3 py-2 rounded-lg cursor-pointer active:opacity-70" href="#summary">Summary</a>
+<a class="font-name-heading text-section-title text-secondary hover:bg-surface-container-high transition-colors px-3 py-2 rounded-lg cursor-pointer active:opacity-70" href="#skills">Skills</a>
+<a class="font-name-heading text-section-title text-secondary hover:bg-surface-container-high transition-colors px-3 py-2 rounded-lg cursor-pointer active:opacity-70" href="#experience">Experience</a>
+<a class="font-name-heading text-section-title text-secondary hover:bg-surface-container-high transition-colors px-3 py-2 rounded-lg cursor-pointer active:opacity-70" href="#contact">Contact</a>
+</nav>
+<button class="md:hidden text-primary hover:bg-surface-container-high p-2 rounded-lg transition-colors cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">description</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="pt-24 px-page-margin max-w-[800px] mx-auto w-full md:grid md:grid-cols-12 md:gap-gutter min-h-screen">
+<!-- Sidebar (33% on Desktop) -->
+<aside class="md:col-span-4 flex flex-col gap-section-gap mb-section-gap md:mb-0 bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
+<!-- Profile Header -->
+<section class="flex flex-col gap-4">
+<div class="w-32 h-32 rounded-full overflow-hidden border-2 border-outline-variant/20 mx-auto md:mx-0">
+<img alt="Alexandre Silva" class="w-full h-full object-cover" data-alt="A professional headshot of a modern software engineer in a well-lit office setting. He is wearing a crisp dark shirt. The background is slightly blurred with soft cool tones typical of a corporate tech environment. High resolution, sharp focus on face." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhHFf-aONYa0EToRrv3ZaoIfIkVzgXHiKTck93CPh3Ro9Fk27EkGctO8_aXy26swZEnXInzePKZ-wGo9aEV7mVVCEmhIi_gFsmBh9f0XR9nH_AF7zuekePdQhEKXFPyrU1s7VPVPU8WPeiqlhRAbbISG07TQVRj4SvsKytnmsrgRq63pDKt-ZnpezI48sssC7St2XoRTjRgYU5Y9SJlQchg247FKrdS1I9X53UlJYBs1Kli-I8gGM5JA"/>
+</div>
+<div>
+<h1 class="font-name-heading text-name-heading text-primary">Alexandre Silva</h1>
+<div class="w-10 h-1 bg-tertiary my-3"></div>
+<h2 class="font-job-title text-job-title text-secondary">Sênior Software Engineer</h2>
+</div>
+</section>
+<!-- Contact -->
+<section class="flex flex-col gap-entry-gap" id="contact">
+<h3 class="font-section-title text-section-title text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2">Contato</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">mail</span>
+<a class="font-metadata text-metadata text-on-surface hover:text-primary transition-colors" href="mailto:alexandre.silva@example.com">alexandre.silva@example.com</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">link</span>
+<a class="font-metadata text-metadata text-on-surface hover:text-primary transition-colors" href="#">linkedin.com/in/alexandresilva</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">code</span>
+<a class="font-metadata text-metadata text-on-surface hover:text-primary transition-colors" href="#">github.com/alexandresilva</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">location_on</span>
+<span class="font-metadata text-metadata text-on-surface">São Paulo, SP - Brasil</span>
+</li>
+</ul>
+</section>
+<!-- Skills -->
+<section class="flex flex-col gap-entry-gap" id="skills">
+<h3 class="font-section-title text-section-title text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2">Habilidades</h3>
+<div class="flex flex-col gap-3">
+<div>
+<span class="font-metadata text-metadata text-secondary mb-2 block">Backend</span>
+<div class="flex flex-wrap gap-2">
+<span class="font-code-label text-code-label bg-surface-container-high text-tertiary border border-secondary/20 rounded px-badge-padding py-1">Java</span>
+<span class="font-code-label text-code-label bg-surface-container-high text-tertiary border border-secondary/20 rounded px-badge-padding py-1">Go</span>
+<span class="font-code-label text-code-label bg-surface-container-high text-tertiary border border-secondary/20 rounded px-badge-padding py-1">Node.js</span>
+</div>
+</div>
+<div>
+<span class="font-metadata text-metadata text-secondary mb-2 block">Frontend</span>
+<div class="flex flex-wrap gap-2">
+<span class="font-code-label text-code-label bg-surface-container-high text-on-surface border border-secondary/20 rounded px-badge-padding py-1">React</span>
+<span class="font-code-label text-code-label bg-surface-container-high text-on-surface border border-secondary/20 rounded px-badge-padding py-1">Tailwind CSS</span>
+</div>
+</div>
+<div>
+<span class="font-metadata text-metadata text-secondary mb-2 block">Cloud &amp; DevOps</span>
+<div class="flex flex-wrap gap-2">
+<span class="font-code-label text-code-label bg-surface-container-high text-tertiary border border-secondary/20 rounded px-badge-padding py-1">AWS</span>
+<span class="font-code-label text-code-label bg-surface-container-high text-tertiary border border-secondary/20 rounded px-badge-padding py-1">Docker</span>
+<span class="font-code-label text-code-label bg-surface-container-high text-on-surface border border-secondary/20 rounded px-badge-padding py-1">Kubernetes</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Education -->
+<section class="flex flex-col gap-entry-gap">
+<h3 class="font-section-title text-section-title text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2">Formação</h3>
+<div class="flex flex-col gap-1">
+<h4 class="font-job-title text-[14px] leading-tight font-semibold text-primary">Ciência da Computação</h4>
+<span class="font-metadata text-metadata text-secondary">Universidade de São Paulo (USP)</span>
+<span class="font-metadata text-metadata text-secondary mt-1">2012 - 2016</span>
+</div>
+</section>
+</aside>
+<!-- Main Body (66% on Desktop) -->
+<div class="md:col-span-8 flex flex-col gap-section-gap">
+<!-- Professional Summary -->
+<section class="flex flex-col gap-4 pt-4 md:pt-0" id="summary">
+<h3 class="font-section-title text-section-title text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2">Resumo Profissional</h3>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                    Engenheiro de Software Sênior com mais de 10 anos de experiência no desenvolvimento full-stack, especializado na concepção e implementação de arquiteturas escaláveis e soluções baseadas em nuvem. Histórico comprovado em liderança técnica de migrações de sistemas monolíticos para microsserviços, otimização de performance e entrega contínua de software de alto impacto para ambientes corporativos e e-commerce.
+                </p>
+</section>
+<!-- Experience -->
+<section class="flex flex-col gap-4" id="experience">
+<h3 class="font-section-title text-section-title text-primary uppercase tracking-widest border-b border-outline-variant/20 pb-2">Experiência Profissional</h3>
+<div class="relative pl-6 border-l border-secondary/30 flex flex-col gap-entry-gap pb-4">
+<!-- Job 1 -->
+<div class="relative">
+<!-- Timeline Node -->
+<div class="absolute -left-[29px] top-1.5 w-4 h-4 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 md:gap-4">
+<h4 class="font-job-title text-job-title text-primary">Sênior Developer</h4>
+<span class="font-code-label text-code-label text-secondary shrink-0">2020 - Presente</span>
+</div>
+<span class="font-metadata text-metadata text-tertiary-container font-semibold uppercase tracking-wide">Tech Solutions</span>
+<p class="font-body-main text-[10pt] leading-relaxed text-on-surface-variant mt-2">
+                                Liderando a migração de arquiteturas legadas para microsserviços distribuídos utilizando Go e Java. Responsável pelo desenho da infraestrutura em nuvem na AWS, implementação de pipelines de CI/CD rigorosos e mentoria de desenvolvedores plenos e juniores. Redução de 40% nos custos de infraestrutura e melhoria de 60% no tempo de resposta das APIs core.
+                            </p>
+</div>
+</div>
+<!-- Job 2 -->
+<div class="relative mt-4">
+<!-- Timeline Node -->
+<div class="absolute -left-[29px] top-1.5 w-4 h-4 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-secondary/50"></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 md:gap-4">
+<h4 class="font-job-title text-job-title text-primary">Full Stack Developer</h4>
+<span class="font-code-label text-code-label text-secondary shrink-0">2016 - 2020</span>
+</div>
+<span class="font-metadata text-metadata text-tertiary-container font-semibold uppercase tracking-wide">Inovação Digital</span>
+<p class="font-body-main text-[10pt] leading-relaxed text-on-surface-variant mt-2">
+                                Desenvolveu o motor central de e-commerce da empresa, lidando com milhares de transações diárias. Implementou interfaces responsivas com React e APIs robustas em Node.js. Colaborou em equipes ágeis para entregar features críticas de pagamento e gerenciamento de inventário, garantindo alta disponibilidade durante picos de tráfego na Black Friday.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Visible only on Mobile md:hidden) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-6 bg-surface-container rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 scale-95 transition-transform duration-150" href="#summary">
+<span class="material-symbols-outlined mb-1" data-weight="fill" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-code-label text-code-label">Summary</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary scale-95 transition-transform duration-150" href="#skills">
+<span class="material-symbols-outlined mb-1">terminal</span>
+<span class="font-code-label text-code-label">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary scale-95 transition-transform duration-150" href="#experience">
+<span class="material-symbols-outlined mb-1">work</span>
+<span class="font-code-label text-code-label">Experience</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary scale-95 transition-transform duration-150" href="#contact">
+<span class="material-symbols-outlined mb-1">mail</span>
+<span class="font-code-label text-code-label">Contact</span>
+</a>
+</nav>
+</body></html>

@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.nav');
 
-menuButton.addEventListener('click', () => {
+menuButton?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
 });
@@ -9,23 +9,30 @@ menuButton.addEventListener('click', () => {
 document.querySelectorAll('.nav a').forEach((link) => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton?.setAttribute('aria-expanded', 'false');
   });
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealElements = document.querySelectorAll('.reveal');
 
-document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+if (reduceMotion || !('IntersectionObserver' in window)) {
+  revealElements.forEach((element) => element.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
+  revealElements.forEach((element) => observer.observe(element));
+}
+
+const progress = document.querySelector('.page-progress');
 window.addEventListener('scroll', () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
-  document.querySelector('.page-progress').style.width = `${progress}%`;
+  progress.style.width = `${scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0}%`;
 }, { passive: true });

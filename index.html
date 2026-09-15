@@ -3,99 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Currículo profissional de Lucas Andrade, Desenvolvedor Full Stack.">
-  <title>Luca — Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio e currículo profissional de Andre Neves, Desenvolvedor Full Stack.">
+  <meta name="theme-color" content="#07111f">
+  <title>Andre Neves — Desenvolvedor Full Stack</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="topbar-brand" href="#perfil"><span>LA</span> CURRÍCULO PROFISSIONAL</a>
-    <nav aria-label="Navegação principal">
-      <a href="#experiencia">Experiência</a><a href="#formacao">Formação</a><a href="#idiomas">Idiomas</a><a href="#projetos">Projetos</a>
+  <div class="page-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Andre Neves, início"><span>AN</span>Andre Neves</a>
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a>
     </nav>
-    <a class="download-link" href="mailto:lucas@email.com">Contato ↗</a>
+    <a class="header-cta" href="mailto:lucas@email.com">Vamos conversar <span>↗</span></a>
   </header>
 
-  <main class="resume" id="perfil">
-    <aside class="sidebar">
-      <section class="identity">
-        <img src="Homer.webp" alt="Imagem de perfil de Lucas Andrade">
-        <p class="availability"><i></i> Disponível para oportunidades</p>
-        <h1>Andre Neves</h1>
-        <div class="title-rule"></div>
-        <p class="role">Desenvolvedor Full Stack</p>
-      </section>
-
-      <section class="side-section contact" id="contato">
-        <h2>Contato</h2>
-        <ul>
-          <li><span class="icon" aria-hidden="true">@</span><a href="mailto:lucas@email.com">lucas@email.com</a></li>
-          <li><span class="icon" aria-hidden="true">in</span><a href="#">linkedin.com/in/lucasandrade</a></li>
-          <li><span class="icon" aria-hidden="true">&lt;/&gt;</span><a href="#">github.com/lucasandrade</a></li>
-          <li><span class="icon" aria-hidden="true">⌖</span><span>São Paulo, SP — Brasil</span></li>
-        </ul>
-      </section>
-
-      <section class="side-section skills">
-        <h2>Competências</h2>
-        <div class="skill-group"><h3>Front-end</h3><div class="badges"><span class="featured">React</span><span>Next.js</span><span>TypeScript</span><span>HTML/CSS</span></div></div>
-        <div class="skill-group"><h3>Back-end</h3><div class="badges"><span class="featured">Node.js</span><span>REST APIs</span><span>PostgreSQL</span></div></div>
-        <div class="skill-group"><h3>Ferramentas</h3><div class="badges"><span>AWS</span><span>Git</span><span>Figma</span><span>Docker</span></div></div>
-      </section>
-
-      <section class="side-section" id="formacao">
-        <h2>Formação</h2>
-        <article class="side-entry"><span>2018 — 2021</span><h3>Análise e Desenvolvimento de Sistemas</h3><p>FIAP · São Paulo</p></article>
-        <article class="side-entry"><span>2024</span><h3>Arquitetura de Software & Clean Code</h3><p>Rocketseat · Especialização</p></article>
-        <article class="side-entry"><span>2023</span><h3>AWS Cloud Practitioner</h3><p>Amazon Web Services</p></article>
-      </section>
-
-      <section class="side-section languages" id="idiomas">
-        <h2>Idiomas</h2>
-        <div class="language"><div><strong>Português</strong><span>Nativo</span></div><div class="bar"><i style="width:100%"></i></div></div>
-        <div class="language"><div><strong>Inglês</strong><span>Avançado · C1</span></div><div class="bar"><i style="width:86%"></i></div></div>
-        <div class="language"><div><strong>Espanhol</strong><span>Intermediário · B1</span></div><div class="bar"><i style="width:62%"></i></div></div>
-      </section>
-    </aside>
-
-    <div class="main-content">
-      <section class="content-section summary">
-        <div class="section-label"><span>00</span><h2>Perfil profissional</h2></div>
-        <blockquote>“Transformo problemas complexos em experiências digitais simples, rápidas e memoráveis.”</blockquote>
-        <p>Desenvolvedor Full Stack com mais de quatro anos de experiência construindo produtos digitais escaláveis. Atuo entre tecnologia, produto e design para transformar necessidades de negócio em soluções claras, acessíveis e de alta performance.</p>
-        <div class="metrics"><div><strong>4+</strong><span>anos de experiência</span></div><div><strong>18</strong><span>projetos entregues</span></div><div><strong>38%</strong><span>ganho de performance</span></div></div>
-      </section>
-
-      <section class="content-section" id="experiencia">
-        <div class="section-label"><span>01</span><h2>Experiência profissional</h2></div>
-        <div class="timeline">
-          <article class="job current">
-            <div class="job-head"><div><h3>Desenvolvedor Full Stack</h3><p class="company">NovaTech · São Paulo</p></div><time>2023 — PRESENTE</time></div>
-            <p>Desenvolvimento de plataformas web escaláveis, criação de APIs e evolução do design system. Redução de 38% no tempo de carregamento e automação de fluxos internos críticos.</p>
-            <ul class="achievements"><li>Arquitetou componentes reutilizáveis para três produtos.</li><li>Estruturou integrações e observabilidade de serviços.</li></ul>
-            <div class="badges"><span class="featured">React</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span></div>
-          </article>
-          <article class="job">
-            <div class="job-head"><div><h3>Desenvolvedor Front-end</h3><p class="company">Studio Loop · Remoto</p></div><time>2021 — 2023</time></div>
-            <p>Construção de interfaces responsivas e acessíveis para produtos B2B e B2C, trabalhando diretamente com produto e design em ciclos ágeis.</p>
-            <ul class="achievements"><li>Implementou interfaces com foco em acessibilidade.</li><li>Ajudou a consolidar padrões visuais entre produtos.</li></ul>
-            <div class="badges"><span>JavaScript</span><span>React</span><span>Figma</span><span>REST APIs</span></div>
-          </article>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Disponível para novas oportunidades</p>
+        <h1>Construo produtos digitais que unem <em>código</em>, produto e experiência.</h1>
+        <p class="hero-intro">Sou Andre Neves, Desenvolvedor Full Stack. Transformo problemas complexos em experiências digitais simples, rápidas e memoráveis.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projetos">Conheça meu trabalho <span>↓</span></a>
+          <a class="button secondary" href="mailto:lucas@email.com">Entrar em contato <span>↗</span></a>
         </div>
-      </section>
+        <div class="social-links"><a href="#" aria-label="LinkedIn de Andre">LinkedIn ↗</a><a href="#" aria-label="GitHub de Andre">GitHub ↗</a><span>São Paulo, Brasil</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame"><img src="Homer.webp" alt="Foto de perfil de Andre Neves"></div>
+        <div class="code-card" aria-hidden="true"><span>01</span><p>const developer = {</p><p>&nbsp;&nbsp;focus: <b>“impact”</b>,</p><p>&nbsp;&nbsp;stack: <b>“full-stack”</b></p><p>};</p></div>
+        <span class="visual-label">FULL-STACK<br>DEVELOPER</span>
+      </div>
+    </section>
 
-      <section class="content-section projects" id="projetos">
-        <div class="section-label"><span>02</span><h2>Projetos selecionados</h2></div>
-        <article><div class="project-head"><div><h3>Finflow</h3><p>Dashboard financeiro para pequenos negócios</p></div><a href="#" aria-label="Abrir projeto Finflow">↗</a></div><p>Aplicação para visão consolidada de receitas, despesas e projeções, com indicadores em tempo real e relatórios automatizados.</p><div class="badges"><span class="featured">Next.js</span><span>Node.js</span><span>PostgreSQL</span></div></article>
-        <article><div class="project-head"><div><h3>Aura Health</h3><p>Aplicativo de bem-estar e hábitos</p></div><a href="#" aria-label="Abrir projeto Aura Health">↗</a></div><p>Experiência mobile que ajuda usuários a acompanhar hábitos, humor e evolução por meio de jornadas simples e personalizadas.</p><div class="badges"><span>React Native</span><span>Firebase</span><span>UX/UI</span></div></article>
-      </section>
-    </div>
+    <section class="impact-strip" aria-label="Destaques profissionais">
+      <div><strong>4+</strong><span>anos criando produtos digitais</span></div>
+      <div><strong>18</strong><span>projetos entregues</span></div>
+      <div><strong>38%</strong><span>ganho de performance</span></div>
+      <div><strong>3</strong><span>produtos com design system</span></div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="section-heading reveal"><p class="eyebrow">01 / Sobre</p><h2>Tecnologia com visão de produto.</h2></div>
+      <div class="about-copy reveal"><p class="lead">Não escrevo apenas código. Entendo o contexto, questiono o problema e construo a solução certa.</p><p>Desenvolvedor Full Stack com mais de quatro anos de experiência criando produtos digitais escaláveis. Atuo na interseção entre tecnologia, produto e design para transformar necessidades de negócio em soluções claras, acessíveis e de alta performance.</p><p>Gosto de sistemas bem pensados, interfaces sem atrito e times que compartilham conhecimento.</p></div>
+    </section>
+
+    <section class="section experience" id="experiencia">
+      <div class="section-heading reveal"><p class="eyebrow">02 / Experiência</p><h2>Onde gerei impacto.</h2></div>
+      <div class="experience-list">
+        <article class="experience-card reveal">
+          <div class="experience-meta"><span>2023 — Agora</span><span>São Paulo / Híbrido</span></div>
+          <div><p class="company">NovaTech</p><h3>Desenvolvedor Full Stack</h3><p>Desenvolvimento de plataformas web escaláveis, criação de APIs e evolução do design system.</p><ul><li>Reduzi em 38% o tempo de carregamento das principais jornadas.</li><li>Arquitetou componentes reutilizáveis para três produtos.</li><li>Estruturou integrações e observabilidade de serviços críticos.</li></ul><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span></div></div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="experience-meta"><span>2021 — 2023</span><span>Remoto</span></div>
+          <div><p class="company">Studio Loop</p><h3>Desenvolvedor Front-end</h3><p>Construção de interfaces responsivas e acessíveis para produtos B2B e B2C em parceria direta com produto e design.</p><ul><li>Implementou jornadas com foco em acessibilidade e conversão.</li><li>Consolidou padrões visuais compartilhados entre produtos.</li></ul><div class="tags"><span>JavaScript</span><span>React</span><span>Figma</span><span>REST APIs</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="section-heading reveal"><p class="eyebrow">03 / Projetos</p><h2>Trabalhos selecionados.</h2></div>
+      <div class="project-grid">
+        <article class="project-card featured-project reveal"><div class="project-number">01</div><div class="project-art finflow" aria-hidden="true"><div class="mini-panel"><i></i><i></i><i></i><span></span></div></div><div class="project-content"><p class="company">Produto financeiro</p><h3>Finflow <a href="#" aria-label="Abrir projeto Finflow">↗</a></h3><p>Dashboard para pequenos negócios acompanharem receitas, despesas e projeções em tempo real.</p><div class="tags"><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span></div></div></article>
+        <article class="project-card reveal"><div class="project-number">02</div><div class="project-art aura" aria-hidden="true"><div class="phone"><span></span><i></i><b></b></div></div><div class="project-content"><p class="company">Saúde & bem-estar</p><h3>Aura Health <a href="#" aria-label="Abrir projeto Aura Health">↗</a></h3><p>Experiência mobile para acompanhar hábitos, humor e evolução em jornadas personalizadas.</p><div class="tags"><span>React Native</span><span>Firebase</span><span>UX/UI</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="competencias">
+      <div class="section-heading reveal"><p class="eyebrow">04 / Competências</p><h2>Ferramentas que uso para entregar.</h2></div>
+      <div class="capability-grid reveal">
+        <div><span class="capability-index">01</span><h3>Front-end</h3><p>React · Next.js · TypeScript<br>HTML · CSS · React Native</p></div>
+        <div><span class="capability-index">02</span><h3>Back-end</h3><p>Node.js · REST APIs<br>PostgreSQL · Firebase</p></div>
+        <div><span class="capability-index">03</span><h3>Produto & ferramentas</h3><p>Figma · Git · Docker<br>AWS · Design Systems</p></div>
+      </div>
+    </section>
+
+    <section class="section credentials">
+      <div class="section-heading reveal"><p class="eyebrow">05 / Formação</p><h2>Aprendizado contínuo.</h2></div>
+      <div class="credential-list reveal">
+        <article><time>2018 — 2021</time><div><h3>Análise e Desenvolvimento de Sistemas</h3><p>FIAP · São Paulo</p></div></article>
+        <article><time>2024</time><div><h3>Arquitetura de Software & Clean Code</h3><p>Rocketseat · Especialização</p></div></article>
+        <article><time>2023</time><div><h3>AWS Cloud Practitioner</h3><p>Amazon Web Services</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <p class="eyebrow reveal">06 / Contato</p>
+      <div class="contact-inner reveal"><h2>Tem um desafio interessante?<br><em>Vamos construir juntos.</em></h2><a class="round-link" href="mailto:lucas@email.com" aria-label="Enviar e-mail para Andre">↗</a></div>
+      <a class="email-link reveal" href="mailto:lucas@email.com">lucas@email.com</a>
+    </section>
   </main>
 
-  <nav class="mobile-nav" aria-label="Navegação móvel"><a href="#perfil">Perfil</a><a href="#experiencia">Experiência</a><a href="#formacao">Formação</a><a href="#projetos">Projetos</a></nav>
-  <footer><span>Andre Neves · Currículo 2026</span><a href="mailto:lucas@email.com">lucas@email.com ↗</a></footer>
+  <footer><span>© 2026 Andre Neves</span><span>Desenvolvido com atenção aos detalhes.</span><a href="#inicio">Voltar ao topo ↑</a></footer>
 </body>
 </html>
